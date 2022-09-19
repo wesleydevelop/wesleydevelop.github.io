@@ -89,7 +89,7 @@ body {
     list-style: none;
     position: relative;
     left: -20px;
-    animation: slider 12.1s steps(3) infinite normal;
+    animation: slider 12s steps(3) infinite normal;
     top: 48px;
 }
 
@@ -104,8 +104,48 @@ body {
     font-size: 32px;
 }
 
+.block{
+    position: relative;
+    margin: 10% auto 0;
+    width: 90%;
+    height: 700px;
+    background: linear-gradient(0deg, black, rgb(44, 44, 44));
+    top: 20%
+}
+
+.glow::before,
+.glow::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff,
+    #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
 
 /*Animation*/
+
+@keyframes animate{
+    0%{
+        background-position: 0,0;
+    }
+    50%{
+        background-position: 400%,0;
+    }
+    100%{
+        background-position: 0,0;
+    }
+}
+
+.glow::after{
+    filter: blur(40px);
+    opacity: 0.33;
+}
 
 @keyframes typewriter {
     from {
