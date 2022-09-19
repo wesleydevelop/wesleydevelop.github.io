@@ -46,7 +46,7 @@ body {
 
 .line {
     position: relative;
-    top: 50%;
+    top: 30%;
     width: 16em;
     margin: 0 auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -54,6 +54,7 @@ body {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;transform: translateY(-50%);
+    color: white;
 }
 
 /*Animation*/
