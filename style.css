@@ -55,11 +55,21 @@ body {
     color: white;
 }
 
+
 .description{
     position: relative;
     top: 19%;
     width: 16em;
     font-size: 21px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.htitle{
+    position: relative;
+    top: 35%;
+    font-size: 42px;
     margin: 0 auto;
     text-align: center;
     color: white;
