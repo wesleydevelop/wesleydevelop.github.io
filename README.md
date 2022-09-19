@@ -5,7 +5,6 @@
 </head>
 <body>
 	<img src="imgs/pfp.jpg" alt="" class="pfp">
-	
 </body>
 </html>	
 
