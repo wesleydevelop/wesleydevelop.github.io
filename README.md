@@ -1,1 +1,0 @@
-# wesleydevlop.github.io
