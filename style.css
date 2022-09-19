@@ -44,9 +44,9 @@ body {
 	}
 }
 
-.line {
+.line{
     position: relative;
-    top: 25%;
+    top: 23%;
     width: 16em;
     margin: 0 auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -54,6 +54,18 @@ body {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;transform: translateY(-50%);
+    color: white;	
+    display: none;	
+}
+.line:after{
+    content: 'Hmm... is this the next line?'
+}
+.namep{
+    position: relative;
+    top: 10%;
+    width: 16em;
+    margin: 0 auto;
+    text-align: center;
     color: white;
 }
 
