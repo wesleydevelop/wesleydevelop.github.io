@@ -10,15 +10,15 @@
         var text = document.getElementById("myId");
         var text2 = document.getElementById("myId2");
         var intervalID = window.setInterval(myCallback, 1000);
-    function myCallback() {
-    text.textContent = "Changed after 1 second";
-    }
+        function myCallback() {
+        text.textContent = "Changed after 1 second";
+        }
 
-    var timer = setInterval(setTime, 1000);
+        var timer = setInterval(setTime, 1000);
 
-    function setTime(){
-        text2.textContent = new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds();
-    }
+        function setTime(){
+            text2.textContent = new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds();
+        }
     </script>
 </head>
 <body>
