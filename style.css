@@ -4,7 +4,22 @@ body {
 	animation: gradient 15s ease infinite;
 	height: 100vh;
 }
-
+.pfp{
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+    background: linear-gradient(135deg, red, blue 50%, white 50%);
+    background-size: 250%;
+    background-position: 100%, 100%;
+    transition: background 0.5s;
+}
+.pfp:hover{
+    background-position: 0%, 0%;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
