@@ -2,7 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 /* Global */
 html {
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -44,44 +46,64 @@ body {
 	}
 }
 
-.line{
-    position: relative;
-    top: 23%;
-    width: 16em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;transform: translateY(-50%);
-    color: white;	
-    display: none;	
-}
-.line:after{
-    content: 'Hmm... is this the next line?'
-}
 .namep{
     position: relative;
-    top: 10%;
+    top: 3%;
     width: 16em;
     margin: 0 auto;
     text-align: center;
     color: white;
 }
 
-/*Animation*/
-
-.anim-typewriter {
-    animation: typewriter 4s steps(40) 1s 1 normal both,
-    blinkTextCursor 500ms steps(40) infinite normal;
+.typer {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: aliceblue;
+    top: 20%
 }
+
+.typer .static{
+    font-size: 32px;
+}
+
+.typer .line li{ 
+    position: relative;
+    top: 45;
+    width: 12em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+    list-style: none;
+    color: #b8b8b8;
+    font-size: 32px;
+    position: relative;
+    /*height: 120px;
+    /*overflow: hidden;
+    line-height: 120px;*/
+    margin-left: -18;
+    animation: typewriter 3s steps(40) 1s infinite normal both,
+    blinkTextCursor 500ms steps(40) infinite normal, slider 11.5s steps(3) infinite;
+}
+
+/*Animation*/
 
 @keyframes typewriter {
     from {
           width: 0;
     }
     to {
-          width: 16em;
+          width: 12em;
+    }
+}
+
+@keyframes slider{
+    100%{
+        top: -45px;
     }
 }
 
@@ -93,3 +115,52 @@ body {
           border-right-color: transparent;
     }
 }
+/*
+.typer{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 23%;
+    display: flex;
+    color: aliceblue;
+
+}
+
+.typer .static{
+    font-size: 32px;
+}
+
+.typer .dynamic{
+    margin-left: 15px;
+
+}
+.dynamic li{
+    list-style: none;
+    color: #b8b8b8;
+    font-size: 32px;
+    position: relative;
+}
+
+.dynamic li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #b8b8b8;
+    animation: typing 3s steps(22) infinite;
+    background-color: black;
+}
+
+@keyframes typing{
+    40%,
+    60%{
+        left: calc(100% + 30px)
+    }
+    100%{
+        left: 0;
+    }
+}
+
+*/
+/*Animation*/
