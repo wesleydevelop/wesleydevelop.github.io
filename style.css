@@ -34,6 +34,42 @@ body {
 .pfp:hover{
     background-position: 0%, 0%;
 }
+
+.nlon{
+    width: 20%;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    border-radius: 5%;
+    transform: translate(-50%, -50%);
+    padding: 3px;
+    background: linear-gradient(135deg, red, blue 50%, transparent);
+    background-size: 250%;
+    background-position: 100%, 100%;
+    transition: background 0.5s;
+    z-index: 2;
+}
+.nlon:hover{
+    background-position: 0%, 0%;
+}
+
+.nlprop{
+    width: 20%;
+    position: absolute;
+    top: 117%;
+    left: 20%;
+    border-radius: 5%;
+    transform: translate(-50%, -50%);
+    padding: 3px;
+    background: linear-gradient(135deg, red, blue 50%, transparent);
+    background-size: 250%;
+    background-position: 100%, 100%;
+    transition: background 0.5s;
+    z-index: 2;
+}
+.nlprop:hover{
+    background-position: 0%, 0%;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -48,7 +84,7 @@ body {
 
 .namep{
     position: relative;
-    top: 3%;
+    top: 0%;
     width: 16em;
     margin: 0 auto;
     text-align: center;
@@ -74,6 +110,19 @@ body {
     text-align: center;
     color: white;
 }
+
+.neontitle{
+    position: relative;
+    width: 10%;
+    top: 45%;
+    font-size: 28px;
+    margin: 0 auto;
+    text-align: center;
+    color: #099fff;
+    z-index: 2;
+    border-bottom: 2px solid #099fff;
+}
+
 
 
 .typer {
