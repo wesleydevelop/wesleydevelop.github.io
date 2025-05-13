@@ -9970,9 +9970,6 @@ h6,
   transition: 2s;
 }
 
-#service * {
-    color: white !important;
-}
 
 .service-icon {
   width: 60px;
